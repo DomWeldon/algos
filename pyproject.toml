@@ -1,0 +1,30 @@
+[project]
+name = "algos"
+version = "0.1.0"
+description = "Implementing a few encryption-related algorithms from scratch in python, just for enhancing my personal comprehension, do not use these implementations!"
+authors = [{ name = "Dom Weldon", email = "dom.weldon@gmail.com" }]
+dependencies = [
+    "rich>=13.7.1",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "0" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "bpython>=0.24",
+    "pyright>=1.1.371",
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "bandit>=1.7.9",
+    "ruff>=0.5.1",
+    "pytest>=8.2.2",
+]
